@@ -1,0 +1,9 @@
+DEPENDENCIES
+  custom-redis
+    path: .
+    metadata: true
+
+GRAPH
+  apt (7.0.0)
+  custom-redis (0.1.0)
+    apt (>= 0.0.0)

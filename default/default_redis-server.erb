@@ -1,0 +1,5 @@
+<% if node["redis"]["ulimit"] && !node["redis"]["ulimit"].empty? %>
+ULIMIT=<%= node["redis"]["ulimit"] %>
+<% else %>
+# ULIMIT=65536
+<% end %>
